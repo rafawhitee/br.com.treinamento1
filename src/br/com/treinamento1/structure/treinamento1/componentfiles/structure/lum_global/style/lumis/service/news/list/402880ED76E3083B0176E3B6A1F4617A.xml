@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface-style version="7.0">
+  <id>402880ED76E3083B0176E3B6A1F4617A</id>
+  <interface-id>lumis.service.news.list</interface-id>
+  <name>Treinamento1-Lista-2</name>
+  <file-path>style/lumis/service/news/list/treinamento1-lista-2.js</file-path>
+  <isolation-level>SHARED</isolation-level>
+  <allowed-consumers>
+    <service-instance-id>402880ED76E3083B0176E3B15AC55DA0</service-instance-id>
+  </allowed-consumers>
+</interface-style>

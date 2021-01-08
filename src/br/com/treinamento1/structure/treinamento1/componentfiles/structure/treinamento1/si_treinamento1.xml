@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service-instance version="7.0">
+  <id>402880ED76DF48590176DF8115CD12BD</id>
+  <name>Treinamento1</name>
+  <description>Permite exibir relatórios de dados de monitoramento da solução</description>
+  <service-id>lumis.service.analytics</service-id>
+  <dependencies>
+    <dependency type="privacyterm_repository">
+      <service-instance-id>402880ED76DF48590176DF81167C13BE</service-instance-id>
+    </dependency>
+  </dependencies>
+</service-instance>

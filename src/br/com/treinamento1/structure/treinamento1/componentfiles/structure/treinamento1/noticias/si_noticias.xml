@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service-instance version="7.0">
+  <id>402880ED76E3083B0176E3B15AC55DA0</id>
+  <name>Notícias</name>
+  <description>Exibe uma lista e detalhes de notícias publicados.</description>
+  <service-id>lumis.service.news</service-id>
+  <workflow>lumis.standardworkflow</workflow>
+  <workflow-permissions>
+    <workflow-permission principal-id="00000000C00000000000000000000003">
+      <role type="allow">author</role>
+      <role type="allow">chiefEditor</role>
+      <role type="allow">editor</role>
+    </workflow-permission>
+  </workflow-permissions>
+  <dependencies>
+    <dependency type="document_repository">
+      <service-instance-id>402880ED76DF48590176DF81157B12AE</service-instance-id>
+    </dependency>
+    <dependency type="media_repository">
+      <service-instance-id>402880ED76DF48590176DF8115A612B3</service-instance-id>
+    </dependency>
+  </dependencies>
+</service-instance>

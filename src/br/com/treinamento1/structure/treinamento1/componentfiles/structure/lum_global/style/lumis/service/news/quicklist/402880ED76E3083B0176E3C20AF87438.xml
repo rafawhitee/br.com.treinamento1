@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface-style version="7.0">
+  <id>402880ED76E3083B0176E3C20AF87438</id>
+  <interface-id>lumis.service.news.quicklist</interface-id>
+  <name>Treinamento1-Lista Rápida</name>
+  <file-path>style/lumis/service/news/quicklist/treinamento1-lista-rapida.js</file-path>
+  <isolation-level>SHARED</isolation-level>
+  <allowed-consumers>
+    <service-instance-id>402880ED76E3083B0176E3B15AC55DA0</service-instance-id>
+  </allowed-consumers>
+</interface-style>

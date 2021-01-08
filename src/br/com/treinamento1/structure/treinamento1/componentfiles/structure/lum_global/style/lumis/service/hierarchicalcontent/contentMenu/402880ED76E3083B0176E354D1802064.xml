@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface-style version="7.0">
+  <id>402880ED76E3083B0176E354D1802064</id>
+  <interface-id>lumis.service.hierarchicalcontent.contentMenu</interface-id>
+  <name>Treinamento1-Menu de Conteúdos</name>
+  <file-path>style/lumis/service/hierarchicalcontent/contentMenu/treinamento1-menu-de-conteudos.js</file-path>
+  <isolation-level>SHARED</isolation-level>
+  <allowed-consumers>
+    <service-instance-id>402880ED76E3083B0176E35110A61ADB</service-instance-id>
+  </allowed-consumers>
+</interface-style>

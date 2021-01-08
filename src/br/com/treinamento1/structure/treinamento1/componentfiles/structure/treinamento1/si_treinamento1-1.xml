@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service-instance version="7.0">
+  <id>402880ED76DF48590176DF8117C916DA</id>
+  <name>Treinamento1</name>
+  <description>Serviço que cria automaticamente uma área administrativa para instâncias de serviços.</description>
+  <service-id>lumis.service.autoadministration</service-id>
+</service-instance>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface-style version="7.0">
+  <id>402880ED76E3083B0176E36AA06F3190</id>
+  <interface-id>lumis.service.search.searchResults</interface-id>
+  <name>Treinamento1-Busca com Resultados</name>
+  <file-path>style/lumis/service/search/searchResults/treinamento1-busca-com-resultados.js</file-path>
+  <isolation-level>SHARED</isolation-level>
+  <allowed-consumers>
+    <service-instance-id>402880ED76DF48590176DF8115BA12B8</service-instance-id>
+  </allowed-consumers>
+</interface-style>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service-instance version="7.0">
+  <id>402880ED76DF48590176DF8115BA12B8</id>
+  <name>Busca</name>
+  <description>Permite buscar conteúdos no portal.</description>
+  <service-id>lumis.service.search</service-id>
+</service-instance>

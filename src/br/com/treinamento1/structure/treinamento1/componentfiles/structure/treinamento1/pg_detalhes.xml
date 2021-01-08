@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page version="7.0">
+  <id>402880ED76E3083B0176E352832A1BDC</id>
+  <name>Detalhes</name>
+  <parent-template-id>402880ED76DF48590176DF81183B170F</parent-template-id>
+  <hidden>true</hidden>
+  <position>2</position>
+  <layout-type>LAYOUT_FILE</layout-type>
+  <layout-file>template.html</layout-file>
+  <layout><![CDATA[<layout>
+    <holder id="pageblock-nav">
+        <interface id="402880ED76E3083B0176E3A223214D46"></interface>
+    </holder>
+    <holder id="pageholder1">
+        <interface id="402880ED76E3083B0176E3C8A9AD7E91"></interface>
+        <interface id="402880ED76E3083B0176E353044E1DD1"></interface>
+        <interface id="402880ED76E3083B0176E35283321BE2"></interface>
+    </holder>
+</layout>]]></layout>
+  <interface-instances>
+    <interface-instance>
+      <id>402880ED76E3083B0176E35283321BE2</id>
+      <interface-id>lumis.service.portalmanagement.serviceinterfaceinstance.interfaceHolder</interface-id>
+      <parent-interface-instance-id>402880ED76DF48590176DF81184D1719</parent-interface-instance-id>
+      <holder-priority>1</holder-priority>
+    </interface-instance>
+    <interface-instance>
+      <id>402880ED76E3083B0176E353044E1DD1</id>
+      <service-instance-id>402880ED76E3083B0176E35110A61ADB</service-instance-id>
+      <interface-id>lumis.service.hierarchicalcontent.contentDetails</interface-id>
+    </interface-instance>
+    <interface-instance>
+      <id>402880ED76E3083B0176E3A223214D46</id>
+      <service-instance-id>402880ED76E1C7EF0176E1D92AEC003A</service-instance-id>
+      <interface-id>lumis.service.pageblockviewer.pageblockview</interface-id>
+      <parent-interface-instance-id>402880ED76E3083B0176E39FEF2A4C2E</parent-interface-instance-id>
+      <custom-properties>
+        <custom-property name="lumis.service.pageblockviewer.pageblockpageid">402880ED76E3083B0176E3993F9142E0</custom-property>
+        <custom-property name="lumis.service.pageblockviewer.renderas">2</custom-property>
+      </custom-properties>
+    </interface-instance>
+    <interface-instance>
+      <id>402880ED76E3083B0176E3C8A9AD7E91</id>
+      <service-instance-id>402880ED76E3083B0176E35110A61ADB</service-instance-id>
+      <interface-id>lumis.service.hierarchicalcontent.breadCrumb</interface-id>
+      <parent-interface-instance-id>402880ED76E3083B0176E3C8232D7CAC</parent-interface-instance-id>
+      <applied-interface-style-id>402880ED76E3083B0176E3C9F0CE0283</applied-interface-style-id>
+    </interface-instance>
+  </interface-instances>
+</page>

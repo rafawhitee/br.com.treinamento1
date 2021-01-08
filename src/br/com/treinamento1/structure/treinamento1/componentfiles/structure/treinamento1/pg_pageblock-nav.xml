@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page version="7.0">
+  <id>402880ED76E3083B0176E3993F9142E0</id>
+  <name>pageblock-nav</name>
+  <hidden>true</hidden>
+  <position>1000</position>
+  <layout-type>LAYOUT_FILE</layout-type>
+  <layout-file>pageblock-nav.html</layout-file>
+  <layout><![CDATA[<layout><holder id="menu">
+    <interface id="402880ED76E3083B0176E35145F31AEF"></interface>
+    <interface id="402880ED76E3083B0176E35CF7CB2649"></interface>
+</holder></layout>]]></layout>
+  <is-page-block>true</is-page-block>
+  <interface-instances>
+    <interface-instance>
+      <id>402880ED76E3083B0176E35145F31AEF</id>
+      <service-instance-id>402880ED76E3083B0176E35110A61ADB</service-instance-id>
+      <interface-id>lumis.service.hierarchicalcontent.contentMenu</interface-id>
+      <applied-interface-style-id>402880ED76E3083B0176E354D1802064</applied-interface-style-id>
+    </interface-instance>
+    <interface-instance>
+      <id>402880ED76E3083B0176E35CF7CB2649</id>
+      <service-instance-id>402880ED76DF48590176DF8115BA12B8</service-instance-id>
+      <interface-id>lumis.service.search.search</interface-id>
+      <applied-interface-style-id>402880ED76E3083B0176E35D7EE52747</applied-interface-style-id>
+    </interface-instance>
+  </interface-instances>
+</page>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface-style version="7.0">
+  <id>402880ED76E3083B0176E3C9F0CE0283</id>
+  <interface-id>lumis.service.hierarchicalcontent.breadCrumb</interface-id>
+  <name>Treinamento1-Caminho da Página</name>
+  <file-path>style/lumis/service/hierarchicalcontent/breadCrumb/treinamento1-caminho-da-pagina.js</file-path>
+  <isolation-level>SHARED</isolation-level>
+  <allowed-consumers>
+    <service-instance-id>402880ED76E3083B0176E35110A61ADB</service-instance-id>
+  </allowed-consumers>
+</interface-style>

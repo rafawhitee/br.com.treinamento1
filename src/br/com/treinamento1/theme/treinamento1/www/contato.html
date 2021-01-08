@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Treinamento Lumis Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/gridlock/fs.gridlock.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+	
+    <script src="js/jquery/jquery-1.11.1.min.js"></script>
+</head>
+<body class="gridlock">
+    <header class="main-header internal-header">
+        <nav id="menu" class="navigation">
+            <ul class="row">
+                <li class="desktop-2 tablet-1 mobile-full"><a class="navigation-link" href="index.html">Home</a></li>
+                <li class="desktop-2 tablet-1 mobile-full"><a class="navigation-link" href="quem-somos.html">Quem somos</a></li>
+                <li class="desktop-2 tablet-1 mobile-full"><a class="navigation-link" href="noticias.html">Notícias</a></li>
+                <li class="desktop-2 tablet-1 mobile-full"><a class="navigation-link active" href="contato.html">Contato</a></li>
+                <li class="desktop-3 tablet-2 mobile-full right"><input class="search-input input" type="search" placeholder="Buscar..."/></li>
+            </ul>
+        </nav>
+        <section class="callout">
+            <div class="site-logo"></div>
+            <h1>Contato</h1>
+        </section>
+    </header>
+    <section class="row internal-content">
+        <article class="all-full">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li>Contato</li>
+            </ul>
+        </article>
+        <article class="news-detail desktop-8 desktop-push-2 tablet-full mobile-full">
+            <h1>Entre em contato com a gente.</h1>
+            <p class="intro">Preencha o formulário abaixo. Todos os campos são obrigatórios.</p>
+            <div class="row warning">
+                <p class="all-full success hide">Sua mensagem foi enviada com sucesso!</p>
+                <p class="all-full error hide">Houveram erros na hora de enviar sua mensagem.</p>
+            </div>
+            <div class="row form">
+                <form id="myForm"  method="post" action="">
+					<div class="desktop-6 tablet-3 mobile-full">
+						<label>Nome:</label>
+						<input name="nome" type="text" class="input" />
+					</div>
+					<div class="desktop-6 tablet-3 mobile-full">
+						<label>E-mail:</label>
+						<input name="email" type="text" class="input" />
+					</div>
+					<div class="clear"></div>
+					<div class="desktop-4 tablet-2 mobile-full">
+						<label>Telefone:</label>
+						<input name="telefone" type="text" class="input formatphone" />
+					</div>
+					<div class="desktop-2 tablet-1 mobile-full">
+						<label>Estado:</label>
+						<select name="estado" class="input">
+							<option value="0">RJ</option>
+							<option value="1">SP</option>
+						</select>
+					</div>
+					<div class="desktop-6 tablet-3 mobile-full">
+						<label>Empresa:</label>
+						<input name="empresa" type="text" class="input"/>
+					</div>
+					<div class="all-full">
+						<label>Mensagem:</label>
+						<textarea name="mensagem" class="input required"></textarea>
+					</div>
+					<div class="all-full">
+						<button class="button-primary">Enviar</button>
+					</div>
+				</form>
+				<script type="text/javascript" src="js/validate/jquery.validate.js"></script>
+				<script type="text/javascript" src="js/validate/jquery.maskedinput.js"></script>
+				<script type="text/javascript">
+					$(document).ready(function(){
+						jQuery(function($){
+							$(".formatphone").mask("(99)9999-9999");
+						});
+					
+						var curForm = $("#myForm");
+
+						curForm.validate({
+							rules: {
+								nome: {required: true, minlength: 4},
+								email: {required: true, email: true},
+								telefone: {required: true},
+								mensagem: {required: true},
+							},
+							messages: {
+								nome: {required: "Favor preencher seu nome completo", minlength: "O nome deve ter pelo menos 4 caracteres"},
+								email: "Favor preencher com um e-mail válido",
+								telefone: "Favor preencher seu telefone",
+								mensagem: "Favor preencher a mensagem",
+							}
+							, submitHandler: function(form){
+								$(".warning .error").hide();
+								$(".warning .success").hide();
+								$.ajax({
+									type: "POST",
+									dataType: "json",
+									url: curForm.attr("action"),
+									data: curForm.serialize(),
+									success: function(data){
+										// success handling here
+										$(".warning .success").show();
+										curForm[0].reset();
+									}
+
+								}).fail(function(data){
+									$(".warning .error").show();
+									// fail handling here
+								});
+							}
+						});
+					});
+				</script>
+           </div>
+        </article>
+    </section>
+    <section class="row headline">
+        <div class="all-full">
+            <h1>Flexibilidade para seus projetos web</h1>
+            <p>Crie o layout mais adequado para o seu público-alvo sem preocupações técnicas. O Lumis Portal cuida do resto.</p>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <section class="row">
+            <article class="desktop-3 tablet-3 mobile-full">
+                <h1>Sobre a Lumis</h1>
+                <p>Pioneira no mercado de portais com a plataforma Lumis Portal, a Lumis oferece produtos e serviços que apoiam seus clientes em múltiplos canais digitais.</p>
+                <p><a href="www.lumis.com">www.lumis.com.br</a></p>
+            </article>
+            <article class="desktop-3 tablet-3 mobile-full">
+                <h1>Sobre o Lumis Portal</h1>
+                <p>Utilizado em projetos críticos nas maiores empresas do país, o Lumis Portal destaca-se como  a primeira plataforma 100% brasileira para gestão portais.</p>
+                <p><a href="www.lumis.com">www.lumisportal.com.br</a></p>
+            </article>
+            <article class="desktop-3 tablet-3 mobile-full social">
+                <h1>Redes Sociais</h1>
+                <div><i class="fa fa-fw fa-facebook"></i><a href="#">Facebook</a></div>
+                <div><i class="fa fa-fw fa-linkedin"></i><a href="#">Linked In</a></div>
+                <div><i class="fa fa-fw fa-twitter"></i><a href="#">Twitter</a></div>
+                <div><i class="fa fa-fw fa-youtube"></i><a href="#">Youtube</a></div>
+            </article>
+            <article class="desktop-3 tablet-3 mobile-full">
+                <h1 class="logo-lumis">Lumis</h1>
+                <p>Powered by <span class="powered">Lumis Portal</span></p>
+            </article>
+        </section>
+    </footer>
+
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script>
+        $(function(){
+            $('#menu').slicknav();
+        });
+    </script>
+</body>
+</html>

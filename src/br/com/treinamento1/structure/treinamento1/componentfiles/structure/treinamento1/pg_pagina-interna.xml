@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page version="7.0">
+  <id>402880ED76DF48590176DF81183B170F</id>
+  <name>Página Interna</name>
+  <template>true</template>
+  <layout-type>LAYOUT_FILE</layout-type>
+  <layout-file>template.html</layout-file>
+  <layout><![CDATA[<layout><holder id="pageblock-nav"><interface id="402880ED76E3083B0176E39FEF2A4C2E"/></holder><holder id="pageholder1"><interface id="402880ED76E3083B0176E3C8232D7CAC"/><interface id="402880ED76DF48590176DF81184D1719"/></holder></layout>]]></layout>
+  <ssi-enabled>false</ssi-enabled>
+  <interface-instances>
+    <interface-instance>
+      <id>402880ED76DF48590176DF81184D1719</id>
+      <interface-id>lumis.service.portalmanagement.serviceinterfaceinstance.interfaceHolder</interface-id>
+      <holder-priority>1</holder-priority>
+    </interface-instance>
+    <interface-instance>
+      <id>402880ED76E3083B0176E39FEF2A4C2E</id>
+      <service-instance-id>402880ED76E1C7EF0176E1D92AEC003A</service-instance-id>
+      <interface-id>lumis.service.pageblockviewer.pageblockview</interface-id>
+      <custom-properties>
+        <custom-property name="lumis.service.pageblockviewer.pageblockpageid">402880ED76E3083B0176E3993F9142E0</custom-property>
+        <custom-property name="lumis.service.pageblockviewer.renderas">2</custom-property>
+      </custom-properties>
+    </interface-instance>
+    <interface-instance>
+      <id>402880ED76E3083B0176E3C8232D7CAC</id>
+      <service-instance-id>402880ED76E3083B0176E35110A61ADB</service-instance-id>
+      <interface-id>lumis.service.hierarchicalcontent.breadCrumb</interface-id>
+      <applied-interface-style-id>402880ED76E3083B0176E3C9F0CE0283</applied-interface-style-id>
+    </interface-instance>
+  </interface-instances>
+</page>

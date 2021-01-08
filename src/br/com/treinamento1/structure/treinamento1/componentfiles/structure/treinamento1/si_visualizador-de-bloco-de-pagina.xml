@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service-instance version="7.0">
+  <id>402880ED76E1C7EF0176E1D92AEC003A</id>
+  <name>Visualizador de bloco de página</name>
+  <description>Permitir renderizar um bloco de página em um interface</description>
+  <service-id>lumis.service.pageblockviewer</service-id>
+</service-instance>

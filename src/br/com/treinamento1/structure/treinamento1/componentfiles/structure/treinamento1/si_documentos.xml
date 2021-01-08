@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service-instance version="7.0">
+  <id>402880ED76DF48590176DF81157B12AE</id>
+  <name>Documentos</name>
+  <description>Permite gerenciar repositório de documentos.</description>
+  <service-id>lumis.service.document</service-id>
+</service-instance>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channel version="7.0">
+  <id>402880ED76DF48590176DF81157312A8</id>
+  <parent-id>00000000F00000000000000000000001</parent-id>
+  <name>Treinamento1</name>
+  <default-page-template-id>402880ED76DF48590176DF81183B170F</default-page-template-id>
+  <inherit-page-template>false</inherit-page-template>
+  <inherit-stylesheet>false</inherit-stylesheet>
+  <local-group-prefix>treinamento1</local-group-prefix>
+  <access-control-list>
+    <entries>
+      <entry principal-id="402880ED76DF48590176DF81187C171E">
+        <allow-permissions>622848</allow-permissions>
+      </entry>
+    </entries>
+  </access-control-list>
+  <property-bag>
+    <property name="lumis.portal.areatag">
+      <private>true</private>
+      <default-values/>
+    </property>
+  </property-bag>
+  <themes>
+    <theme>br.com.treinamento1.theme.treinamento1</theme>
+  </themes>
+  <groups>
+    <group alias="publishers">
+      <id>402880ED76DF48590176DF81187C171E</id>
+      <name>STR_PORTAL_PUBLISHERS_GROUP_NAME</name>
+    </group>
+  </groups>
+</channel>
