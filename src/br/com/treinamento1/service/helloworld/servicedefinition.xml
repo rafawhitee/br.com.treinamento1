@@ -4,5 +4,7 @@
   
   <interfaces>
     <interface name="Hello" id="hello" className="br.com.treinamento1.service.helloworld.HelloWorld" />
+    <interface name="Repositories" id="repositories" className="br.com.treinamento1.service.helloworld.RepositoriesGithub" />
   </interfaces>
+  
 </serviceDefinition>

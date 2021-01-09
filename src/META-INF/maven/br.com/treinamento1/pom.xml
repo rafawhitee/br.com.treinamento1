@@ -1,28 +1,50 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>br.com</groupId>
-  <artifactId>treinamento1</artifactId>
-  <version>1.0</version>
-  <name>Treinamento1</name>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com</groupId>
+	<artifactId>treinamento1</artifactId>
+	<version>1.0</version>
+	<name>Treinamento1</name>
 	<repositories>
- 		 <repository>
-      		<id>lumisportal</id>
-      		<url>http://repo.lumis.com.br/repository/lumisportal/</url>
-    	</repository>
-    	<repository>
-      		<id>jcenter</id>
-      		<url>https://jcenter.bintray.com/</url>
-    	</repository>
+		<repository>
+			<id>lumisportal</id>
+			<url>http://repo.lumis.com.br/repository/lumisportal/</url>
+		</repository>
+		<repository>
+			<id>jcenter</id>
+			<url>https://jcenter.bintray.com/</url>
+		</repository>
 	</repositories>
-  	<dependencies>
-	  	<dependency>
-	  		<groupId>com.lumis</groupId>
-	  		<artifactId>lumisportal</artifactId>
-	  		<version>12.5.0.200928-free</version>
-	  		<scope>provided</scope>
-	  	</dependency>
-  	</dependencies>
-  	<properties>
+	<dependencies>
+		<dependency>
+			<groupId>com.lumis</groupId>
+			<artifactId>lumisportal</artifactId>
+			<version>12.5.0.200928-free</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.konghq</groupId>
+			<artifactId>unirest-java</artifactId>
+			<version>3.10.00</version>
+		</dependency>
+		<dependency>
+			<groupId>com.konghq</groupId>
+			<artifactId>unirest-object-mappers-gson</artifactId>
+			<version>3.11.04</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>3.6.28</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-validator</groupId>
+			<artifactId>commons-validator</artifactId>
+			<version>1.7</version>
+		</dependency>
+	</dependencies>
+	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<build>
