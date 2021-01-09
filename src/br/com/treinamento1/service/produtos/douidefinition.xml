@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- $Revision: 16176 $ $Date: 2014-03-12 02:09:21 +0000 (Wed, 12 Mar 2014) $ -->
-<doui:douiDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:doui="http://www.lumis.com.br/lumisportal/xsd/doui"  xmlns:control="http://www.lumis.com.br/douicontrols">
+<!-- $Revision: 16176 $ $Date: 2014-03-12 02:09:21 +0000 (Wed, 12 Mar 2014) 
+	$ -->
+<doui:douiDefinition
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:doui="http://www.lumis.com.br/lumisportal/xsd/doui"
+	xmlns:control="http://www.lumis.com.br/douicontrols">
 	<service>
 		<sources>
 			<source id="default" type="contentTable">
 				<table>t_produtos</table>
 				<fields>
-					<field id="id" name="id" dataType="guid" required="true" isPrimaryKey="true" display="false" />
-					<field id="nome" name="nome" dataType="string" required="true" isPrimaryName="true" isSearchable="true" />
-					<field id="descricao" name="descricao" dataType="string" isSearchable="true" isIntroduction="true" />
-					<field id="tipo" name="tipo" dataType="string" required="true" isSearchable="true" >
+					<field id="id" name="id" dataType="guid" required="true"
+						isPrimaryKey="true" display="false" />
+					<field id="nome" name="nome" dataType="string"
+						required="true" isPrimaryName="true" isSearchable="true" />
+					<field id="descricao" name="descricao" dataType="string"
+						isSearchable="true" isIntroduction="true" />
+					<field id="tipo" name="tipo" dataType="string"
+						required="true" isSearchable="true">
 						<options>
 							<option value="1">Tipo A</option>
 							<option value="2">Tipo B</option>
@@ -18,23 +26,34 @@
 					</field>
 				</fields>
 				<metaData>
-					<comments/>
-					<publishToServiceInstances/>
-					<publishStartDate/>
-					<publishEndDate/>
-					<highlight/>
-					<highlightEndDate/>
-					<multiLanguage/>
-					<publishToPrincipals/>
-					<versioning/>
-					<workflow/>
-					<tag/>
-					<seo/>
+					<comments />
+					<publishToServiceInstances />
+					<publishStartDate />
+					<publishEndDate />
+					<highlight />
+					<highlightEndDate />
+					<multiLanguage />
+					<publishToPrincipals />
+					<versioning />
+					<workflow />
+					<tag />
+					<seo />
 				</metaData>
-				
+
 			</source>
-			
+
 		</sources>
+
 	</service>
+
+	<interfaces>
+		<interface id="quickList">
+			<sources>
+				<source id="default">
+				  <maxRows>3</maxRows>
+				</source>
+			</sources>
+		</interface>
+	</interfaces>
 	
 </doui:douiDefinition>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doui:douiDefinition xmlns:doui="http://www.lumis.com.br/lumisportal/xsd/doui" xmlns:control="http://www.lumis.com.br/douicontrols">
+	<service>
+	
+		<sources>
+			<source id="consultor" type="table">
+				<table>t_consultor</table>
+				<fields>
+					<field id="id" name="ID" dataType="string" isPrimaryKey="true" />
+					<field id="nome" name="Nome" dataType="string" isPrimaryName="true" />
+					<field id="telefone" name="Telefone" dataType="string" />
+					<field id="email" name="E-mail" dataType="string" />
+				</fields>
+			</source>
+		</sources>
+		
+	</service>
+</doui:douiDefinition>

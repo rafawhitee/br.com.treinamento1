@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.lumis.com.br/lumisportal/xsd/servicedefinition.xsd">
+  <service name="Consultor" type="lum_doui">
+  </service>
+  
+  <interfaces>
+  	<!-- end-user interfaces -->
+  	<interface name="STR_QUICK_LIST" id="quicklist" type="lum_douiQuickList" />
+  	<interface name="STR_LIST" id="list" type="lum_douiList" />
+  	<interface name="STR_DETAILS" id="details" type="lum_douiDetails" />
+  	
+  	<!-- administration interfaces -->
+  	<interface name="STR_ADMINISTRATION" id="administration" type="lum_douiAdministrationList" />
+	<interface name="STR_ADD" id="add" type="lum_douiAdministrationAddPropertyPage" />
+	<interface name="STR_EDIT" id="edit" type="lum_douiAdministrationEditPropertyPage" />
+  </interfaces>
+</serviceDefinition>

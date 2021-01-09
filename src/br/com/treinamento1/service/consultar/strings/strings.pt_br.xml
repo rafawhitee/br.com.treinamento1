@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<strings>
+<string id="STR_ID"><![CDATA[Id]]></string>
+<string id="STR_NOME"><![CDATA[Nome]]></string>
+<string id="STR_EMAIL"><![CDATA[E-mail]]></string>
+<string id="STR_TEL"><![CDATA[Telefone]]></string>
+</strings>

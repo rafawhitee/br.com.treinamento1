@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- $Revision: 16445 $ $Date: 2014-09-18 21:21:12 +0000 (Thu, 18 Sep 2014) $ -->
+<databaseDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.lumis.com.br/lumisportal/xsd/databasedefinition.xsd">
+	
+	<table name="t_consultor">
+		<fields>
+			<field name="id" type="guid" isNotNull="true" />
+			<field name="nome" type="string" isNotNull="true" />
+			<field name="telefone" type="string" />
+			<field name="email" type="string" />
+		</fields>
+		<constraints>
+			<constraint name="t_consultor_PK" type="primaryKey">
+				<fields>
+					<field name="id"/>
+				</fields>
+			</constraint>
+		</constraints>
+	</table>
+	
+</databaseDefinition>

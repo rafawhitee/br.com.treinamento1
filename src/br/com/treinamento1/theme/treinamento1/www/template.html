@@ -15,10 +15,13 @@
  </head> 
  <body class="gridlock"> 
   <header class="main-header internal-header"> 
-  <page:dummy page:holder="pageblock-nav"></page:dummy>
+   <page:dummy page:holder="pageblock-nav"></page:dummy> 
    <section class="callout"> 
     <div class="site-logo"></div> 
-	   <h1><el:out value="${pageWebResource.pageWebResourceData.simpleTitle}">10</el:out></h1> 
+    <h1> 
+     <el:out value="${pageWebResource.pageWebResourceData.simpleTitle}">
+       10 
+     </el:out></h1> 
    </section> 
   </header> 
   <section class="row internal-content" page:holder="pageholder1"> 
@@ -38,49 +41,8 @@
     <p class="credits">Escrito por Fulano da Silva, em 26/11/2014</p> 
    </article> 
   </section> 
-  <section class="row headline"> 
-   <div class="all-full"> 
-    <h1>Flexibilidade para seus projetos web</h1> 
-    <p>Crie o layout mais adequado para o seu público-alvo sem preocupações técnicas. O Lumis Portal cuida do resto.</p> 
-   </div> 
-  </section> 
-  <footer class="site-footer"> 
-   <section class="row"> 
-    <article class="desktop-3 tablet-3 mobile-full"> 
-     <h1>Sobre a Lumis</h1> 
-     <p>Pioneira no mercado de portais com a plataforma Lumis Portal, a Lumis oferece produtos e serviços que apoiam seus clientes em múltiplos canais digitais.</p> 
-     <p><a href="www.lumis.com">www.lumis.com.br</a></p> 
-    </article> 
-    <article class="desktop-3 tablet-3 mobile-full"> 
-     <h1>Sobre o Lumis Portal</h1> 
-     <p>Utilizado em projetos críticos nas maiores empresas do país, o Lumis Portal destaca-se como a primeira plataforma 100% brasileira para gestão portais.</p> 
-     <p><a href="www.lumis.com">www.lumisportal.com.br</a></p> 
-    </article> 
-    <article class="desktop-3 tablet-3 mobile-full social"> 
-     <h1>Redes Sociais</h1> 
-     <div>
-      <i class="fa fa-fw fa-facebook"></i>
-      <a href="#">Facebook</a>
-     </div> 
-     <div>
-      <i class="fa fa-fw fa-linkedin"></i>
-      <a href="#">Linked In</a>
-     </div> 
-     <div>
-      <i class="fa fa-fw fa-twitter"></i>
-      <a href="#">Twitter</a>
-     </div> 
-     <div>
-      <i class="fa fa-fw fa-youtube"></i>
-      <a href="#">Youtube</a>
-     </div> 
-    </article> 
-    <article class="desktop-3 tablet-3 mobile-full"> 
-     <h1 class="logo-lumis">Lumis</h1> 
-     <p>Powered by <span class="powered">Lumis Portal</span></p> 
-    </article> 
-   </section> 
-  </footer> 
+  <page:dummy page:holder="pageblock-prefooter"></page:dummy> 
+  <page:dummy page:holder="pageblock-footer"></page:dummy> 
   <script src="js/jquery.slicknav.min.js"></script> 
   <script>
         $(function(){
