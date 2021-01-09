@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.lumis.com.br/lumisportal/xsd/servicedefinition.xsd">
+  <service name="Olá Mundo" />
+  
+  <interfaces>
+    <interface name="Hello" id="hello" className="br.com.treinamento1.service.helloworld.HelloWorld" />
+  </interfaces>
+</serviceDefinition>
