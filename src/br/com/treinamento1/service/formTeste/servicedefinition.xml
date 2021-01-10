@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceDefinition
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.lumis.com.br/lumisportal/xsd/servicedefinition.xsd">
+
+	<service name="FormTeste" type="lum_doui">
+		<description>Formulário de Teste</description>
+	</service>
+
+	<interfaces>
+		<interface id="formTeste" name="WithRest" type="lum_doui" />
+	</interfaces>
+
+</serviceDefinition>

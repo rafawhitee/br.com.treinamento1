@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doui:douiDefinition
+	xmlns:doui="http://www.lumis.com.br/lumisportal/xsd/doui"
+	xmlns:control="http://www.lumis.com.br/douicontrols">
+	<service>
+		<sources>
+		</sources>
+	</service>
+
+	<interfaces>
+		<interface id="formTeste">
+			<controls>
+				<control:lum_form />
+			</controls>
+			<processActions>
+				<processAction id="commit"
+					actionType="lum_actionLogin"
+					className="br.com.treinamento1.service.formTeste.processAction.FormTesteProcessActionHandler" />
+			</processActions>
+		</interface>
+	</interfaces>
+</doui:douiDefinition>
